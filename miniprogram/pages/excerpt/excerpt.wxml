@@ -1,0 +1,13 @@
+<!--pages/excerpt/excerpt.wxml-->
+<view class="bg">
+    <view class="my-container" bindtap="goToDetail">
+        <view class="content flex-content">
+            <view wx:for="{{verse}}" class="verse flex-item">
+                <text class="vertical-text">{{item}}</text>
+            </view>
+        </view>
+        <view class="author">
+            <text class="vertical-text">{{data.origin.author}} ﹁{{data.origin.title}}﹂</text>
+        </view>
+    </view>
+</view>

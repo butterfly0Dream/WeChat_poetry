@@ -1,0 +1,91 @@
+/* pages/detail/detail.wxss */
+.my-container {
+    background-color: #FFFFFF;
+    height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.margin {
+    margin: 0 40rpx;
+}
+
+.my-container text {
+    color: gray;
+}
+
+.title text {
+    font-size: 45rpx;
+    color: black;
+}
+
+.au {
+    margin-top: 15rpx;
+    margin-bottom: 30rpx;
+}
+
+.au text {
+    font-size: 35rpx;
+}
+
+.sentence {
+    margin-bottom: 15rpx;
+    display: inline-block;
+    text-align: left;
+}
+
+.author {
+    margin-top: 120rpx;
+    font-size: 35rpx;
+}
+
+.author .author-title {
+    float: left;
+}
+
+.author .author-title text {
+    color: blue;
+}
+
+.author .more {
+    float: right;
+}
+
+.author .more image {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.img-flod {
+    transform: rotate(0);
+}
+
+.img-unflod {
+    transform: rotate(90deg);
+}
+
+.author::after {
+    content: "";
+    clear: both;
+}
+
+.author-detail {
+    margin-top: 200rpx;
+    margin-bottom: 30rpx;
+    clear: both;
+    font-size: 35rpx;
+    text-align: left;
+}
+
+.flod {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+.unflod {
+    display: '';
+    overflow: visible;
+}

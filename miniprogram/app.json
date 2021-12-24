@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/excerpt/excerpt",
+    "pages/detail/detail",
+    "pages/library/library",
+    "pages/author/author",
+    "pages/index/index",
+    "pages/getOpenId/index",
+    "pages/getMiniProgramCode/index",
+    "pages/deployService/index",
+    "pages/createCollection/index",
+    "pages/uploadFile/index",
+    "pages/selectRecord/index",
+    "pages/updateRecord/index",
+    "pages/updateRecordResult/index",
+    "pages/updateRecordSuccess/index",
+    "pages/sumRecord/index",
+    "pages/sumRecordResult/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/excerpt/excerpt",
+        "text": "一句",
+        "iconPath": "images/tab_extract.png",
+        "selectedIconPath": "images/tab_extract_s.png"
+      },
+      {
+        "pagePath": "pages/library/library",
+        "text": "文库",
+        "iconPath": "images/tab_library.png",
+        "selectedIconPath": "images/tab_library_s.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

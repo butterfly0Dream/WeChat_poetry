@@ -1,0 +1,46 @@
+<!--pages/library/library.wxml-->
+<view class="bg">
+    <view class="tab flex-content">
+        <view wx:for="{{tabs}}" class="flex-item {{selectTab==index ? 'active' : ''}}" data-idx="{{index}}" bindtap="switchTab">{{item}}</view>
+    </view>
+    <view class="line"></view>
+
+    <scroll-view scroll-y="true" class="content list" hidden="{{selectTab==0 ? '' : true}}">
+        <view wx:for="{{poetTang}}" class="list_item" bindtap="gotoDetail" data-content ="{{item}}">
+            <view class="text">
+                <text class="title">{{item.title}}</text>
+                <text class="author">{{item.author}}</text>
+                <view class="sentence">
+                    <text>{{item.paragraphs[0]}}</text>
+                </view>
+            </view>
+            <view class="line"></view>
+        </view>
+    </scroll-view>
+
+    <scroll-view scroll-y="true" class="content list" hidden="{{selectTab==1 ? '' : true}}">
+        <view wx:for="{{poetSong}}" class="list_item" bindtap="gotoDetail" data-content ="{{item}}">
+            <view class="text">
+                <text class="title">{{item.title}}</text>
+                <text class="author">{{item.author}}</text>
+                <view class="sentence">
+                    <text>{{item.paragraphs[0]}}</text>
+                </view>
+            </view>
+            <view class="line"></view>
+        </view>
+    </scroll-view>
+
+    <scroll-view scroll-y="true" class="content list" hidden="{{selectTab==2 ? '' : true}}">
+        <view wx:for="{{ci}}" class="list_item"  bindtap="gotoDetail" data-content ="{{item}}">
+            <view class="text">
+                <text class="title">{{item.rhythmic}}</text>
+                <text class="author">{{item.author}}</text>
+                <view class="sentence">
+                    <text>{{item.paragraphs[0]}}</text>
+                </view>
+            </view>
+            <view class="line"></view>
+        </view>
+    </scroll-view>
+</view>

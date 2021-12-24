@@ -1,0 +1,54 @@
+/* pages/library/library.wxss */
+.bg {
+    background-color: white;
+    color: gray;
+    height: 100vh;
+}
+
+.content{
+    height: 100%;
+}
+
+.flex-content {
+    display: flex;
+    text-align: center;
+}
+
+.flex-item {
+    flex: auto;
+    margin: 30rpx 0;
+    font-size: 36rpx;
+}
+
+.active {
+    color: #5588ff;
+}
+
+.line{
+    margin: 0 30rpx;
+    height: 1rpx;
+    background-color: #e3e3e3;
+}
+
+.list_item .text {
+    margin: 20rpx 40rpx;
+    font-size: 36rpx;
+}
+
+.list_item .title {
+    color: black;
+    font-size: 40rpx;
+}
+
+.list_item .author {
+    float: right;
+}
+
+.list_item .author::after {
+    content: "";
+    clear: both;
+}
+
+.list_item .sentence {
+    margin-top: 8rpx;
+}

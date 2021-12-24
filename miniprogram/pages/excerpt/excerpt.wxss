@@ -1,0 +1,42 @@
+/* pages/excerpt/excerpt.wxss */
+.bg {
+    height: 100vh;
+    background-color: #EFEFEF;
+    box-sizing: border-box;
+}
+
+.my-container {
+    position: relative;
+    height: 90vh;
+    background-color: #FFFFFF;
+    margin: 5vh 3vh;
+    box-sizing: border-box;
+}
+
+.vertical-text{
+    writing-mode: vertical-rl;
+}
+
+.content{
+    position: absolute;
+    right: 40rpx;
+    top: 70rpx;
+}
+
+.flex-content{
+    display: flex;
+    direction: rtl;
+}
+
+.verse{
+    font-size: 60rpx;
+    letter-spacing: 20rpx;
+}
+
+.author{
+    position: absolute;
+    left: 30rpx;
+    bottom: 60rpx;
+    font-size: 35rpx;
+    letter-spacing: 5rpx;
+}

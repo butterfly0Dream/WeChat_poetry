@@ -1,0 +1,18 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view class="my-container" scroll-y="true">
+    <view class="content margin">
+        <view class="title"><text>{{data.title}}</text></view>
+        <view class="au"><text>[{{data.dynasty}}]{{data.author}}</text></view>
+        <view class="all-sentence">
+            <view class="sentence" wx:for="{{data.content}}"><text>{{item}}</text></view>
+        </view>
+    </view>
+    <view class="author margin" bindtap="foldAuthor">
+        <view class="author-title"><text>作者</text></view>
+        <view class="more">
+            <text>更多</text>
+            <image src="../../images/arrow.svg" class="img-{{flod}}"></image>
+        </view>
+    </view>
+    <view class="author-detail {{flod}} margin"><text>{{detail}}</text></view>
+</scroll-view>
